@@ -6,7 +6,6 @@
     <title>Flutter - Register</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="controller.js"></script>
 </head>
 
 <body>
@@ -19,11 +18,11 @@
             <div class="errors" id="errors"></div>
 
             <input type="text" name="username" placeholder="User Name" class="auth-input" />
-            <input type="text" name="text" placeholder="Email" class="auth-input" />
+            <input type="text" name="email" placeholder="Email" class="auth-input" />
             <input type="password" name="password" placeholder="Password" class="auth-input" />
 
             <div class="auth-actions">
-                <button type="submit" class="auth-button" onclick="validate()">Submit</button>
+                <button type="submit" class="auth-button">Submit</button>
             </div>
         </form>
 
@@ -36,7 +35,8 @@
 
 <!-- Loads firbase client API, initializes db facade & loads the controller code -->
 	<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
-	<script src="scripts/db-facade.js"></script>
+    <script src="scripts/db-facade.js"></script>
+    <script src="scripts/controller.js"></script>
 </body>
 
 </html>
