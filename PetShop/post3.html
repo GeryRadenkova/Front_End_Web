@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pet Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navigation-bar">
+        <ul class="topnav">
+
+            <li>
+                <a href="file:///D:/4course_FMI/Front_End_Web/Front_End_Web/PetShop/posts.html">Home</a>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Categories &#9660;
+                    </button>
+                    <nav class="dropdown-content">
+                        <ul class="dropdown-button-list">
+                            <li><a href="#">Mammals</a></li>
+                            <li><a href="#">Birds</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Food</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </li>
+
+            <li>
+                <a href="file:///D:/4course_FMI/Front_End_Web/Front_End_Web/PetShop/contacts.html">Contacts</a>
+            </li>
+
+            <li>
+                <a href="#footer-bottom">About</a>
+            </li>  
+
+        </ul>
+    </header>
+
+
+    <div class="content">
+        <main class="container-posts">
+
+            <section class="images">
+                <div class="pic">
+                    <img src="images/Pomeranian.jpg" alt="pomeranian">
+                </div>
+            </section>
+
+            
+            <div class="posts">
+                
+                <table>
+                    <tbody id="table-body">
+                        <tr>
+                            <td>Breed</td>
+                            <td>Pomeranian</td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td>2 months</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>12 inches (male), 7 inches (female)</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>7 pounds (male), 3 pounds (female)</td>
+                        </tr>
+                        <tr>
+                            <td>Life Expectancy</td>
+                            <td>10-12 years</td>
+                        </tr>
+                        <tr>
+                            <td>Living space</td>
+                            <td>Pomeranians are small dogs that don’t need a lot of exercise. 
+                                A brisk walk or two every day plus a little running around 
+                                indoors is plenty. Remember to keep your dog leashed since
+                                they are fragile and a little clueless when it comes to 
+                                bigger dogs and cars.</td>
+                        </tr>
+                        <tr>
+                            <td>Personality</td>
+                            <td>Pomeranians are proud and extroverted. They can display great 
+                                intelligence and loyalty to their extended family. They are 
+                                curious and like to be the center of attention. They are very 
+                                friendly and playful. With poor training and a lack of obedience 
+                                lessons, Pomeranians can develop aggressive tendencies and excessive 
+                                barking problems. A little defensiveness is okay, but don’t let your 
+                                Pomeranian become a nuisance for everyone around you. They respond 
+                                well to obedience and agility training, so it’s up to you to show 
+                                them the right way.</td>
+                        </tr>
+                        <tr>
+                            <td>Behavior with kids</td>
+                            <td>Pomeranians can make great pets for families, but you should always 
+                                supervise your pet with small children. The Pomeranian body is small 
+                                and fragile – it won’t stand up to much rough-housing or careless handling. 
+                                Generally, Pomeranians are very friendly and well suited to family life.</td>
+                        </tr>
+                        <tr>
+                            <td>Protection</td>
+                            <td>Pomeranians are alert dogs and can be overly defensive without the proper 
+                                training. Make sure you instill good habits early in life to keep the
+                                barking and aggressive posturing to a minimum. Toys and positive 
+                                reinforcement can help you train your Pomeranian.</td>
+                        </tr>
+                        <tr>
+                            <td>Training</td>
+                            <td>Pomeranians are intelligent and alert dogs. They are eager to please 
+                                and often respond well to training. Excessive barking and aggressive 
+                                behavior can be a problem without proper early intervention with 
+                                obedience school in young Pomeranians.</td>
+                        </tr>
+                        <tr>
+                            <td>Temperament & Behavior</td>
+                            <td>Pomeranians are active and alert dogs who crave attention. They 
+                                love to be the center of everyone’s attention - don’t be surprised
+                                when they seem to want to be around you all the time! They seek approval
+                                from people around them, but they can become overprotective and 
+                                defensive if poorly trained or neglected. Pomeranians exhibit a high
+                                level of intelligence and respond well to obedience and agility 
+                                training. Your Pomeranian is a curious little dog, so be sure to dog-proof 
+                                your home before your new guest arrives. Garbage cans, beware!</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="category-input-input">
+                                <input class="iBtn" type="button" id="insertBtn" name="insert" value="Insert category" onclick="onButtonClick()"/>
+                                <input class="hide" type="text" id="categoryInput" value="Insert category"/>
+                                <input class="hide" type="submit" id="insertCategory" onclick="addCategory()"/>
+                            </td>
+                            <td>
+                                <textarea class="hide" id="descriptionInput" rows="3" cols="90"></textarea>
+                                <input class="hide" type="submit" id="insertDescription" onclick="addDescription()"/>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+            </div>
+
+        </main>
+    </div>
+
+
+    <footer class="footer" id="footer-bottom">    
+        <div class="bottom">
+            
+            <div class="col1">
+                <h3>Info</h3> 
+                <p> 
+                    The range of products that are offered by a pet store comprise <br>
+                    of a wide range of pets and pet food supplies such as collars, <br>
+                    leashes, medication, toys, cat furniture, enclosures, health <br>
+                    and beauty aids and dog kennels. The latest trend in the market <br>
+                    is of buying healthy and nutritious foods for the pets so that they <br>
+                    remain healthy and fit
+                </p>
+            </div>
+
+            <div class="col2">
+                <h3>Opening Hours</h3> 
+                <p>
+                    Mon - Fri : 08.00 am - 20.00 pm <br>
+                    Saturday : 09.00 am - 20.00 pm <br>
+                    Sunday : We Are Closed <br>
+                </p>
+            </div>
+
+            <div class="col3">
+                <h3>Contact Info</h3> 
+                <p>
+                    jk.Lozenets <br>
+                    bul.James Baucher <br><br>
+                    tel.: 0898776655 <br><br>
+                    mail: mail@petshop.com <br>
+                </p>
+            </div>
+   
+        </div>
+    </footer>
+
+    <script src="scripts/controller.js"></script>
+
+</body>
+
+</html>

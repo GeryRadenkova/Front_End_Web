@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pet Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navigation-bar">
+        <ul class="topnav">
+
+            <li>
+                <a href="file:///D:/4course_FMI/Front_End_Web/Front_End_Web/PetShop/posts.html">Home</a>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Categories &#9660;
+                    </button>
+                    <nav class="dropdown-content">
+                        <ul class="dropdown-button-list">
+                            <li><a href="#">Mammals</a></li>
+                            <li><a href="#">Birds</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Food</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </li>
+
+            <li>
+                <a href="file:///D:/4course_FMI/Front_End_Web/Front_End_Web/PetShop/contacts.html">Contacts</a>
+            </li>
+
+            <li>
+                <a href="#footer-bottom">About</a>
+            </li>  
+
+        </ul>
+    </header>
+
+
+    <div class="content">
+        <main class="container-posts">
+
+            <section class="images">
+                <div class="pic">
+                    <img src="images/German-Shepherd.jpg" alt="german shepherd">
+                </div>
+            </section>
+
+            
+            <div class="posts">
+                
+                <table>
+                    <tbody id="table-body">
+                        <tr>
+                            <td>Breed</td>
+                            <td>German Shepherd</td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td>1 months</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>25-26 inches (male), 23-24 inches (female)</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>85-95 pounds (male), 75-85 pounds (female)</td>
+                        </tr>
+                        <tr>
+                            <td>Life Expectancy</td>
+                            <td>10-12 years</td>
+                        </tr>
+                        <tr>
+                            <td>Living space</td>
+                            <td>German Shepherds can adapt to almost any space as long as 
+                                they are well exercised. However, due to their physical 
+                                size and amount of shedding, a house with a yard for convenient 
+                                exercise would be ideal.</td>
+                        </tr>
+                        <tr>
+                            <td>Personality</td>
+                            <td>German Shepherds are loyal, fearless, reliable, intelligent,
+                                and somewhat aloof. They are intensely focused on their 
+                                leader and not immediately friendly with people who aren’t 
+                                a part of the inner circle.</td>
+                        </tr>
+                        <tr>
+                            <td>Behavior with kids</td>
+                            <td>German Shepherds can be gentle and tolerant, but introduction to babies, 
+                                unknown children, or raising both a puppy and children simultaneously, 
+                                should be well planned. German Shepherds are territorial, can be 
+                                possessive, and have a strong prey drive, so the boundaries and 
+                                expectations of behavior around children need to be clear.</td>
+                        </tr>
+                        <tr>
+                            <td>Protection</td>
+                            <td>German Shepherds are very protective of their families. 
+                                Their alert and reserved nature makes them excellent guard dogs.</td>
+                        </tr>
+                        <tr>
+                            <td>Temperament & Behavior</td>
+                            <td>German Shepherds are renowned to be confident, fearless, alert, 
+                                and suspicious of potential dangers. Careful breeding made them 
+                                ready and willing to nab the bad guys, whether they’re wolves in 
+                                the flock or enemy troops. They’re eager to do whatever duty appointed. 
+                                There are working and companion or ‘show’ bloodlines that influence
+                                the intensity of an individual dog. Working dogs aren’t meant 
+                                to be companions as they are high-energy and have a high prey drive.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="category-input-input">
+                                <input class="iBtn" type="button" id="insertBtn" name="insert" value="Insert category" onclick="onButtonClick()"/>
+                                <input class="hide" type="text" id="categoryInput" value="Insert category"/>
+                                <input class="hide" type="submit" id="insertCategory" onclick="addCategory()"/>
+                            </td>
+                            <td>
+                                <textarea class="hide" id="descriptionInput" rows="3" cols="90"></textarea>
+                                <input class="hide" type="submit" id="insertDescription" onclick="addDescription()"/>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+            </div>
+
+        </main>
+    </div>
+
+
+    <footer class="footer" id="footer-bottom">    
+        <div class="bottom">
+            
+            <div class="col1">
+                <h3>Info</h3> 
+                <p> 
+                    The range of products that are offered by a pet store comprise <br>
+                    of a wide range of pets and pet food supplies such as collars, <br>
+                    leashes, medication, toys, cat furniture, enclosures, health <br>
+                    and beauty aids and dog kennels. The latest trend in the market <br>
+                    is of buying healthy and nutritious foods for the pets so that they <br>
+                    remain healthy and fit
+                </p>
+            </div>
+
+            <div class="col2">
+                <h3>Opening Hours</h3> 
+                <p>
+                    Mon - Fri : 08.00 am - 20.00 pm <br>
+                    Saturday : 09.00 am - 20.00 pm <br>
+                    Sunday : We Are Closed <br>
+                </p>
+            </div>
+
+            <div class="col3">
+                <h3>Contact Info</h3> 
+                <p>
+                    jk.Lozenets <br>
+                    bul.James Baucher <br><br>
+                    tel.: 0898776655 <br><br>
+                    mail: mail@petshop.com <br>
+                </p>
+            </div>
+   
+        </div>
+    </footer>
+
+    <script src="scripts/controller.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pet Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navigation-bar">
+        <ul class="topnav">
+
+            <li>
+                <a href="file:///D:/4course_FMI/Front_End_Web/Front_End_Web/PetShop/posts.html">Home</a>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Categories &#9660;
+                    </button>
+                    <nav class="dropdown-content">
+                        <ul class="dropdown-button-list">
+                            <li><a href="#">Mammals</a></li>
+                            <li><a href="#">Birds</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Food</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </li>
+
+            <li>
+                <a href="file:///D:/4course_FMI/Front_End_Web/Front_End_Web/PetShop/contacts.html">Contacts</a>
+            </li>
+
+            <li>
+                <a href="#footer-bottom">About</a>
+            </li>  
+
+        </ul>
+    </header>
+
+
+    <div class="content">
+        <main class="container-posts">
+
+            <section class="images">
+                <div class="pic">
+                    <img src="images/Ragdoll.jpg" alt="ragdoll">
+                </div>
+            </section>
+
+            
+            <div class="posts">
+                
+                <table>
+                    <tbody id="table-body">
+                        <tr>
+                            <td>Breed</td>
+                            <td>Ragdoll</td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td>2 months</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>11 inches (male), 9 inches (female)</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>20 pounds (male), 10 pounds (female)</td>
+                        </tr>
+                        <tr>
+                            <td>Life Expectancy</td>
+                            <td>10-12 years</td>
+                        </tr>
+                        <tr>
+                            <td>Living space</td>
+                            <td>As one of the larger cat breeds, Ragdolls enjoy having plenty of room to lounge.</td>
+                        </tr>
+                        <tr>
+                            <td>Personality</td>
+                            <td>Ragdoll cats love their people, and it shows. This breed will greet you 
+                                at the door, is happy to be held and will even participate in a game of fetch.</td>
+                        </tr>
+                        <tr>
+                            <td>Behavior with kids</td>
+                            <td>If you need a kid-friendly cat, this is the breed for you. A Ragdolll is 
+                                happy to be cuddled and carried, and they’re even known to tolerate the 
+                                occasional game of dress-up.</td>
+                        </tr>
+                        <tr>
+                            <td>Temperament & Behavior</td>
+                            <td>The perfect family pet, the Ragdoll is gentle and affectionate, 
+                                even-tempered and relaxed. Happy to play with kids and to be cuddled 
+                                and dressed up, Ragdolls are sometimes compared to dogs because of 
+                                their characteristic friendliness and the fact that they can be 
+                                taught to play fetch.
+                                As friendly as most Ragdolls are, Isabelle Bellavance, a Cat Fanciers’ 
+                                Association (CFA) breed council secretary for Ragdolls, cautions that 
+                                not all cats of this breed are the same, and some may not like to be held. 
+                                That said, Bellavance describes the breed as happy-go-lucky, trusting, 
+                                easygoing and somewhat naïve, potentially to their detriment.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="category-input-input">
+                                <input class="iBtn" type="button" id="insertBtn" name="insert" value="Insert category" onclick="onButtonClick()"/>
+                                <input class="hide" type="text" id="categoryInput" value="Insert category"/>
+                                <input class="hide" type="submit" id="insertCategory" onclick="addCategory()"/>
+                            </td>
+                            <td>
+                                <textarea class="hide" id="descriptionInput" rows="3" cols="90"></textarea>
+                                <input class="hide" type="submit" id="insertDescription" onclick="addDescription()"/>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+            </div>
+
+        </main>
+    </div>
+
+
+    <footer class="footer" id="footer-bottom">    
+        <div class="bottom">
+            
+            <div class="col1">
+                <h3>Info</h3> 
+                <p> 
+                    The range of products that are offered by a pet store comprise <br>
+                    of a wide range of pets and pet food supplies such as collars, <br>
+                    leashes, medication, toys, cat furniture, enclosures, health <br>
+                    and beauty aids and dog kennels. The latest trend in the market <br>
+                    is of buying healthy and nutritious foods for the pets so that they <br>
+                    remain healthy and fit
+                </p>
+            </div>
+
+            <div class="col2">
+                <h3>Opening Hours</h3> 
+                <p>
+                    Mon - Fri : 08.00 am - 20.00 pm <br>
+                    Saturday : 09.00 am - 20.00 pm <br>
+                    Sunday : We Are Closed <br>
+                </p>
+            </div>
+
+            <div class="col3">
+                <h3>Contact Info</h3> 
+                <p>
+                    jk.Lozenets <br>
+                    bul.James Baucher <br><br>
+                    tel.: 0898776655 <br><br>
+                    mail: mail@petshop.com <br>
+                </p>
+            </div>
+   
+        </div>
+    </footer>
+
+    <script src="scripts/controller.js"></script>
+
+</body>
+
+</html>

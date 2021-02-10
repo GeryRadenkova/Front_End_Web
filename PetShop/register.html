@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pet Shop - registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="user">
+        <form class="registration-form" id="regirter-form">
+
+            <h1 class="user-title">Register</h1>
+
+            <div class="errors" id="errors"></div>
+
+            <div class="user-input-field">
+                <input type="text" name="username" placeholder="User Name" class="user-input"/>
+            </div>
+
+            <div class="user-input-field">
+                <input type="text" name="email" placeholder="Email" class="user-input"/>
+            </div>
+
+            <div class="user-input-field">
+                <input type="password" name="password" placeholder="Password" class="user-input"/>
+            </div>
+
+            <div class="user-input-field">
+                <input type="password" name="confirm-password" placeholder="Confirm Password" class="user-input"/>
+            </div>
+
+            <div class="user-actions">
+                <button type="submit" class="user-button">Register</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="scripts/db-facade.js"></script>
+
+</body>
+
+</html>
