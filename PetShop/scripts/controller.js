@@ -205,11 +205,14 @@ function addDescription() {
     document.getElementById("insertDescription").className = "hide";
 }
 
+/*
 function setCookie() {
     document.cookie = "category=" + document.getElementById("categoryInput").value;
     document.cookie = "description=" + document.getElementById("descriptionInput").value;
 }
+*/
 
+/*
 function getCookie() {
     var cookieArray = document.cookie.split("; ");
 
@@ -223,3 +226,4 @@ function getCookie() {
         }
     }
 }
+*/
