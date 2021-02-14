@@ -3,7 +3,7 @@
 const formElement = document.getElementById("regirter-form");
 const loginFormElement = document.getElementById("user-login-form");
 
-const usernameElement = document.querySelector(".user-input[name=username]");
+const usernameElement = document.querySelector(".user-input[name=username]"); 
 const emailElement = document.querySelector(".user-input[name=email]");
 const passwordElement = document.querySelector(".user-input[name=password]");
 const confirmPasswordElement = document.querySelector(".user-input[name=confirm-password]");
@@ -80,10 +80,11 @@ if(formElement) {
             passwordElement.value = "";
             confirmPasswordElement.value = "";
             */
-           alert("Successful registration.");
+           
             window.auth.register(usernameElement.value, emailElement.value, passwordElement.value, (isSuccessful, errorCode, errorMessage) => {
                 if(isSuccessful) {
                     window.location = "index.html";
+                    alert("Successful registration.");
                 }
                 else {
                     alert(errorMessage);
